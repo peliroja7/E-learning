@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@200;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <title>Portfolio</title> 
+</head>
+<body>
+    
+    <nav>
+
+        <ul class="nav-list">
+            <li class="logo">JI</li>
+            <label for="nav-toggle" class="nav-toggle-label"><span></span></label>
+            <input type="checkbox" id="nav-toggle" class="nav-toggle">
+            <ul class="nav-list-items">
+            <li class="nav-item"><a href="">Portfolio</a></li>
+            <li class="nav-item"><a href="src/about.html">About</a></li>
+            <li class="nav-item"><a href="#contact">Contact</a></li>
+        </ul>
+        </ul>
+    </nav>
+    
+    <div class="contanier">
+    <header>
+        <div class="hero-section">
+            <h1>Hi, I’m Jelena.</h1>
+            <h2>I’m always looking for new opportunities to strive towards my main passion,
+                 and that’s the career in e-learning development. </h2>
+            <button class="btn"><a href="#work"> My Work </a></button>
+            <button class="btn-blank"> CV</button>
+        </div>
+        <div class="hero-image none">
+            <img src="src/assets/images/hero-image-large.png" alt="hero-image">
+           
+        </div>
+        
+    </header>
+    <div class="work-text" id="work">
+        <h3>Work</h3>
+    </div>
+    <section >
+        <div class="project-contanier" data-aos="fade-right">
+        <div class="project-img">
+            <img src="src/assets/images/project-img.png" alt="">
+        </div>
+        <div class="explanation">
+            <p>Budgeting for Young Adults</p>
+            <button class="btn"><a href="src/projects-page.html">Learn More</a></button>
+        </div>
+       </div>
+    </section>
+</div>
+    <nav class="footer">
+        <div class="nav-list-footer" id="contact">
+            <h3>Get in touch</h3>
+            <p class="nav-item-footer">Mail: jelena.ilic07@gmail.com</p>
+            <p class="nav-item-footer"><a href="https://www.linkedin.com/in/jelena-ilic-061846215/">LinkedIn</a></p>
+            
+        </div>
+        <div class="nav-list-footer">
+            <li class="nav-item-footer"><a href="">Portfolio</a></li>
+            <li class="nav-item-footer"><a href="src/about.html">About</a></li>
+            <li class="nav-item-footer"><a href="#contact">Contact</a></li>
+            <p class="nav-item-footer">&copy Jelena Ilic.All rights reserved.</p>
+        </div>
+    </nav>
+</div>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 1000
+  });
+   let cvbtn = document.querySelector(".btn-blank")
+
+   cvbtn.addEventListener("click", function(){
+    window.open("src/assets/JelenaIlicCV.pdf");
+   });
+ 
+</script>
+</body>
+</html>

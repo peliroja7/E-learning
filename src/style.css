@@ -133,7 +133,8 @@ span{
 
 nav{
   background-color: var(--clr-primary);
-  padding: 1em 20vh;
+  padding: 0em 20vh; /*!*/
+  max-height: 5em;
 }
 .nav-list{
   display: flex;
@@ -152,8 +153,6 @@ nav{
 .logo{
   margin-right: auto;
   list-style: none;
-  color: var(--clr-hover);
-  font-size: 2em;
 } 
 .nav-toggle{
   display: none;

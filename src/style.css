@@ -330,11 +330,12 @@ a:hover{
   padding-top: 5em;
   margin: 0;
 }
-.logo{
-  font-size: 1em;
+.logo img{
+  width: 55px; 
 }
 nav {
-  padding: 1em 10vh;
+  padding: 0em 20vh; 
+  max-height: 15em;
   width: 100%;
   position: absolute;
   
@@ -394,8 +395,12 @@ nav {
   .contanier{
     padding: 0 min(10vh, 10em);
   }
+  nav{
+    padding: 0em 10vh; 
+  }
   .hero-section {
     font-size: 0.75em;
+    padding-top: 2em;
   }
   section{
     flex-direction: column;
